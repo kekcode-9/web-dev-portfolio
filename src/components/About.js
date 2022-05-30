@@ -26,14 +26,11 @@ function About() {
                     transition = {{duration: 1.5, delay: 0.8}}
                     >
                         <div className="brief">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                        sed do eiusmod tempor incididunt ut labore et dolore 
-                        magna aliqua. Lacus sed viverra tellus in hac habitasse 
-                        platea dictumst vestibulum. Netus et malesuada fames ac.
-                        Eleifend mi in nulla posuere sollicitudin. Interdum 
-                        consectetur libero id faucibus nisl tincidunt. Aliquet 
-                        nec ullamcorper sit amet risus nullam eget. Velit laoreet
-                        id donec ultrices tincidunt arcu. 
+                            Hi, I am Rupamita and I enjoy building web applications.
+                            Since March of 2022, I have been working on my personal frontend projects using 
+                            HTML, Vanilla JavaScript, pure CSS, SASS, React. I like making things visually 
+                            appealing and I hope you enjoy visiting this portfolio app I made. 
+                            Feel free to take a look at my works. 
                         </div>
                     </motion.div>
                     <div className="buttons">
