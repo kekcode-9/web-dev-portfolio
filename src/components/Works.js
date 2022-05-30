@@ -90,11 +90,11 @@ function Works () {
                                 size and test. For better results refresh the page once you have resized the viewport.
                             </div>
                             <div className='project-links'>
-                                <a href={projectSummary[0].link} target='_blank'
+                                <a href={projectSummary[1].link} target='_blank'
                                 style={{textDecoration: 'none'}} className='project-link'>
                                     Checkout the project
                                 </a>
-                                <a href={projectSummary[0].repolink} target='_blank'
+                                <a href={projectSummary[1].repolink} target='_blank'
                                 style={{textDecoration: 'none'}} className='project-link'>
                                     Checkout the code in github
                                 </a>
