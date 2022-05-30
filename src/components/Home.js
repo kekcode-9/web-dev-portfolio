@@ -4,7 +4,6 @@ import { AnimatePresence, motion } from "framer-motion";
 
 function Home() {
     const [menuOpen, setMenuOpen] = useState(false);
-    const [atHome, setAtHome] = useState(true);
   
     return (
         <div className="Home"
@@ -29,17 +28,14 @@ function Home() {
                 <div className='menu-items'
                 style={{display: (menuOpen) ? 'flex' : 'none'}}
                 >
-                    <Link id='about' to='/about'
+                    <Link id='about' className="menu-link" to='/about'
                     style={{animation: (menuOpen) && 'menu-fade-in 0.3s ease forwards'}}
-                    onClick={() => {setAtHome(false)}}
                     />
-                    <Link id='projects' to='/works'
+                    <Link id='projects' className="menu-link" to='/works'
                     style={{animation: (menuOpen) && 'menu-fade-in 0.9s ease forwards'}}
-                    onClick={() => {setAtHome(false)}}
                     />
-                    <Link id='contact' to='/contact'
+                    <Link id='contact' className="menu-link" to='/contact'
                     style={{animation: (menuOpen) && 'menu-fade-in 0.9s ease forwards'}}
-                    onClick={() => {setAtHome(false)}}
                     />
                 </div>
             </motion.div>
