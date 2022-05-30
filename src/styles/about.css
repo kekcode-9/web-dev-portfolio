@@ -1,0 +1,174 @@
+.about {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 670px;
+    height: 670px;
+    padding: 2%;
+    border: transparent solid;
+    border-radius: 50%;
+    box-sizing: border-box;
+    box-shadow: -15px 15px 60px;
+    background-color: rgba(12, 2, 2, 0.55);
+    display: flex;
+    flex-direction: column;
+    animation: shadow-size-transition 1s ease delay infinite;
+}
+
+.image {
+    width: 180px;
+    height: 180px;
+    top: -3%;
+    left: -8%;
+    position: relative;
+    border: transparent solid;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: -5px 5px 40px;
+}
+
+.image > img {
+    width: 170%;
+    height: 170%;
+    position: relative;
+    top: -37%;
+    left: -51%;
+}
+
+.brief {
+    font-size: large;
+    word-spacing: 10px;
+    text-align: left;
+    letter-spacing: 2px;
+    position: relative;
+    color: wheat;
+    top: -3%;
+    left: 18%;
+    width: 78%;
+}
+
+.buttons {
+    position: relative;
+    top: 5%;
+    left: 19%;
+    width: 60%;
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button-link {
+    text-decoration: none;
+    font-size: large;
+    letter-spacing: 4px;
+    word-spacing: 10px;
+    color: #eebac8;
+    font-weight: 600;
+    position: relative;
+    opacity: 0.8;
+}
+
+.button-link:hover {
+    font-size: larger;
+    letter-spacing: 6px;
+    opacity: 0.6;
+    transition: 0.3s ease-in-out;
+}
+
+.button-link:active {
+    opacity: 0.7;
+}
+
+@keyframes shadow-size-transition {
+    0% {
+        box-shadow: -15px 15px 60px;
+    }
+
+    50% {
+        box-shadow: -25px 25px 90px;
+    }
+
+    100% {
+        box-shadow: -15px 15px 60px;
+    }
+}
+
+@media screen and (max-width: 796px) {
+    .image {
+        width: 140px;
+        height: 140px;
+        top: -64%;
+        left: 33%;
+    }
+
+    .card {
+        width: 70%;
+        height: 739px;
+        border-radius: 7%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .brief {
+        letter-spacing: 2px;
+        top: -15%;
+        left: 6%;
+        width: 90%;
+    }
+
+    .buttons {
+        top: 1%;
+        height: 12%;
+        left: -1%;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .card {
+        width: 102%;
+        height: 70%;
+        border-radius: 0%;
+    }
+
+    .brief {
+        left: 1%;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .card {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .image {
+        position: relative;
+        top: auto;
+        left: auto;
+    }
+
+    .brief {
+        top: auto;
+        left: auto;
+    }
+
+    .buttons {
+        top: auto;
+        left: auto;
+    }
+}
