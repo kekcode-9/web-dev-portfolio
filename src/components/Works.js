@@ -29,7 +29,7 @@ function Works () {
         transition = {{delay: 0.5, duration: 1}}
         >
             <div className='works'>
-                <a className='folio-src-link' href='#'>
+                <a className='folio-src-link' href='https://github.com/kekcode-9/web-dev-portfolio.git' target='_blank'>
                     portfolio source
                 </a>
                 <div className='top-div'>
