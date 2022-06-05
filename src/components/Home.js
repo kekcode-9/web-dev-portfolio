@@ -6,13 +6,13 @@ function Home() {
     const [menuOpen, setMenuOpen] = useState(false);
   
     return (
-        <div className="Home"
+        <motion.div
+        initial = {{opacity: 0}}
+        animate = {{opacity: 1}}
+        exit = {{opacity: 0}}
+        transition = {{duration: 0.5, delay: 0.2}}
         >
-            <motion.div
-            initial = {{opacity: 0}}
-            animate = {{opacity: 1}}
-            exit = {{opacity: 0}}
-            transition = {{duration: 0.5, delay: 0.2}}
+            <div className="home"
             >
                 <div className='outer-div'>
                     <div className='curvy'
@@ -28,18 +28,24 @@ function Home() {
                 <div className='menu-items'
                 style={{display: (menuOpen) ? 'flex' : 'none'}}
                 >
-                    <Link id='about' className="menu-link" to='/about'
-                    style={{animation: (menuOpen) && 'menu-fade-in 0.3s ease forwards'}}
-                    />
-                    <Link id='projects' className="menu-link" to='/works'
-                    style={{animation: (menuOpen) && 'menu-fade-in 0.9s ease forwards'}}
-                    />
-                    <Link id='contact' className="menu-link" to='/contact'
-                    style={{animation: (menuOpen) && 'menu-fade-in 0.9s ease forwards'}}
-                    />
+                    <div>
+                        <Link id='about' className="menu-link" to='/about'
+                        style={{animation: (menuOpen) && 'menu-fade-in 0.3s ease forwards'}}
+                        />
+                    </div>
+                    <div>
+                        <Link id='projects' className="menu-link" to='/works'
+                        style={{animation: (menuOpen) && 'menu-fade-in 0.9s ease forwards'}}
+                        />
+                    </div>
+                    <div>
+                        <Link id='contact' className="menu-link" to='/contact'
+                        style={{animation: (menuOpen) && 'menu-fade-in 0.9s ease forwards'}}
+                        />
+                    </div>
                 </div>
-            </motion.div>
-        </div>
+            </div>
+        </motion.div>
     );
   }
 
