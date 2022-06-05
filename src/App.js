@@ -8,7 +8,7 @@ import Works from "./components/Works";
 import Contact from "./components/Contact";
 
 function App() {
-  window.document.body.style.background = "url('images/bg-image-3.png') no-repeat center center fixed";
+  window.document.body.style.background = "url('images/bg-image-2.png') no-repeat center center fixed";
   window.document.body.style.backgroundSize = "cover";
   
   const location = useLocation();
