@@ -5,6 +5,13 @@ function Works () {
     const projectSummary = [
         {
             id: 1,
+            heading: 'Tripping : A travel safety app',
+            image: '/images/works/Trippin.png',
+            link: 'https://www.behance.net/gallery/159859037/Travel-Safety-App'
+        }
+        /*
+        {
+            id: 1,
             heading: 'Easybank Landing Page',
             image: 'images/works/easybank-landing-page/layered-easybank-3.png',
             link: 'https://kekcode-9.github.io/EasyBankLandingPage/',
@@ -23,7 +30,7 @@ function Works () {
             image: 'images/works/grocery-store-app/grocery-store-layered.png',
             link: 'https://kekcode-9.github.io/online-grocery-store-frontend/',
             repolink: 'https://github.com/kekcode-9/online-grocery-store-frontend.git'
-        }
+        } */
     ]
     return (
         <motion.div
@@ -57,11 +64,11 @@ function Works () {
                                         see the project
                                     </a>
                                 </div>
-                                <div className='project-link'>
+                                { /* <div className='project-link'>
                                     <a href={project.link} target='_blank'>
                                         github repo
                                     </a>
-                                </div>
+                                </div> */ }
                             </div>
                         </div>
                     ))}
